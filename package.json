@@ -1,0 +1,29 @@
+{
+  "name": "pi-nextcloud",
+  "version": "0.1.0",
+  "description": "Pi extension for Nextcloud: notes, calendar events, tasks and contacts (REST / CalDAV / CardDAV)",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "nextcloud"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.7.3",
+    "typebox": "^1.3.7"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.4",
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
